@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      dialog {
+        padding: 0;
+        border:0;
+        border-radius: 7px;
+        box-shadow: 0 0 7px black; 
+        flex-direction: column;
+      }
+      .dialog-titulo {
+        background-color: #eee;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        height: 40px;
+      }
+      .dialog-conteudo {
+        background-color: #fff;
+        padding: 7px;
+      }
+      .dialog-rodape {
+        background-color: #fff;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        padding: 7px;
+        border-top: 1px solid black;
+      }
+      #btn-fechar {
+        border: none;
+        border-radius: 7px;
+        padding: 7px;
+        cursor: pointer;
+        outline: none;
+      }
+      #btn-fechar:hover {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="controla()" id="btn-abrir">Abrir</button>
+
+    <dialog id="d1">
+      <div class="dialog-titulo">
+        <h3>Caixa de Dialago</h3>
+      </div>
+      <div class="dialog-conteudo">
+        <p>Caixa de dialago HTML 5 nativa</p>
+        <p>Cursos CFB | Curso Profissional de HTML 5</p>
+      </div>
+      <div class="dialog-rodape">
+        <button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
+      </div>
+    </dialog>
+
+    <script>
+      function abrirDialog() {
+        document.getElementById("d1").setAttribute("open", "");
+        document.getElementById("btn-abrir").innerHTML = 'Fechar';
+      }
+      function fecharDialog() {
+        document.getElementById("d1").removeAttribute("open");
+        document.getElementById("btn-abrir").innerHTML = 'Abrir';
+      }
+      function controla() {
+        if (document.getElementById("d1").open) {
+          fecharDialog();
+        }
+        else {
+          abrirDialog();
+        }
+      }
+    </script>
+
+    </body>
+  </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#canal">Canal</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner" class="banner">
+    <img src="banner.jpg">
+  </section>
+
+  <section id="sobre" class="fexible">
+    <article class="border_none" data-animation="esquerda">
+      Sobre o Canal
+    </article>
+    <article class="border_none" data-animation="direita">
+      Sobre o Min
+    </article>
+  </section>
+
+  <section id="cursos" class="fexible">
+    <article class="border_none conteinerCursos" data-animation="esquerda">
+      <img src="c1.jpg" alt="Curso de programação C#" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="curso de arduino" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de HTML Profissional" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de JavaScrpit" class="mini" onclick="clickModal(this)">
+    </article>
+    <article class="border_none conteinerCursos" data-animation="centro">
+      <img src="c1.jpg" alt="Curso de AppInventor" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de programação C++" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso QT Creator com C++" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de Flash" class="mini" onclick="clickModal(this)">
+    </article>
+    <article class="border_none conteinerCursos" data-animation="direita">
+      <img src="c1.jpg" alt="Curso de 3D Unity" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de PhotoShop" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Curso de PHP" class="mini" onclick="clickModal(this)">
+      <img src="c1.jpg" alt="Projeto site completo" class="mini" onclick="clickModal(this)">
+    </article>
+  </section>
+
+  <section class="parallax p2">
+    <article>
+      <p>TESTE</p>
+      <p>TESTE</p>
+      <p>TESTE</p>
+      <p>TESTE</p>
+    </article>
+  </section>
+
+  <section id="canal" class="fexible">
+    <article class="border_none" data-animation="esquerda">
+      Imagem link canal
+    </article>
+    <article class="border_none" data-animation="direita">
+      Link direto para o canal
+    </article>
+  </section>
+
+  <section id="contato" class="fexible">
+    <article class="border_none" data-animation="esquerda">
+      Contato esquerda
+    </article>
+    <article class="border_none" data-animation="centro">
+      Contato centro
+    </article>
+    <article class="border_none" data-animation="direita">
+      Contato direita
+    </article>
+  </section>
+
+  <footer>
+  </footer>
+
+  <div id="janelaModal" class="janelaModal escondeJanelaModal"> 
+    <span id="btnFechar" class="fecharModal">X</span>
+    <img id="imgModal" class="imgModal">
+    <div id="txtModal" class="txtModal"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

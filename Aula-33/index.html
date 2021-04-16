@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .quebra{
+      display: block;
+      margin: 15px;
+    }
+    form {
+      border: 1px solid black;
+      padding: 0px;
+      border-radius: 10px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <form name="f_cadastro" action="#" method="get">
+    <label for="f_username" class="quebra">Username:</label>
+    <input type="text" name="f_username" class="quebra" maxlength="20">
+    <label for="f_password" class="quebra">Password:</label>
+    <input type="password" name="f_password" class="quebra" maxlength="10">
+
+    <label class="quebra">Cursos:</label>
+    <label class="quebra">
+    <input type="checkbox" name="f_esporte" value="HTML">HTML</label>
+    <label class="quebra">
+    <input type="checkbox" name="f_esporte" value="CSS">CSS</label>
+    <label class="quebra">
+    <input type="checkbox" name="f_esporte" value="JS">JS</label>
+
+    <label class="quebra">Possui carro?</label>
+    <input type="radio" name="f_carro" value="sim">Sim
+    <input type="radio" name="f_carro" value="nao">Não
+
+    <label class="quebra">Hora:</label>
+    <input type="time" name="f_hora" min="09:00" max="17:00" class="quebra" required>
+
+    <label class="quebra">Data:</label>
+    <input type="date" name="f_data">
+
+    <label class="quebra">Month:</label>
+    <input type="month" name="f_month">
+
+    <label class="quebra">Semana:</label>
+    <input type="week" name="f_week">
+
+    <label class="quebra">Color:</label>
+    <input type="color" name="f_color">
+
+    <label class="quebra">email:</label>
+    <input type="email" name="f_email">
+
+    <label class="quebra">Image:</label>
+    <input type="image" name="f_image">
+
+    <input type="submit" name="f_entrar" class="quebra" value="Entrar" >
+  </form>
+</body>
+</html>
