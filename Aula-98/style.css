@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.menu_container {
+  width: 300px;
+  padding: 15px 0px;
+  background-color: #bbb;
+}
+
+.menu_container li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.menu_container li a:hover {
+  background-color: #eee;
+}
+
+.menu_container h2 {
+  padding-left: 10px;
+}
+
+#pesquisa {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd
+}
+
+#menu {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}

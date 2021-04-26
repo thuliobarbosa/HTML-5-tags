@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <nav class="tabs">
+    <button class="btn-tabs" data-btn-tabs id="primeiro" onclick="abrir_tab(event, 'dark')">Dark</button>
+    <button class="btn-tabs" data-btn-tabs onclick="abrir_tab(event, 'dracula')">Dracula</button>
+    <button class="btn-tabs" data-btn-tabs onclick="abrir_tab(event, 'omni')">Omni</button>
+  </nav>
+
+  <article class="conteudo-tab" id="dark">
+    <span class="fechar-tab" onclick="this.parentElement.style.display = 'none'">X</span>
+    <h3>Dark</h3>
+    <p>Tema Dark é o melhor!</p>
+  </article>
+
+  <article class="conteudo-tab" id="dracula">
+    <span class="fechar-tab" onclick="this.parentElement.style.display = 'none'">X</span>
+    <h3>Dracula</h3>
+    <p>Tema Dracula é o queridinho dos dev's</p>
+  </article>
+
+  <article class="conteudo-tab" id="omni">
+    <span class="fechar-tab" onclick="this.parentElement.style.display = 'none'">X</span>
+    <h3>Omni</h3>
+    <p>Tema Omni quase não é usado.</p>
+  </article>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
