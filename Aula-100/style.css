@@ -33,8 +33,17 @@ header a:hover{
   background-color: #ddd;
 }
 
-header #logo {
+header a.ativo{
+  background-color:#800;
+  color: #fff;
+}
+
+#logo {
   font-size: 35px;
   font-weight: bold;
   transition: 0.4s;
+}
+
+#menu {
+ float: right;
 }

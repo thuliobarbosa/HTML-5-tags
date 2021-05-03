@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <section class="slide_show_container">
+
+    <div class="slide fade">
+      <div class="numero_slide">1/4</div>
+      <img src="banner1.png" class="img_slide" style="width: 100%;">
+      <div class="texto_slide">One Slide</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="numero_slide">2/4</div>
+      <img src="banner2.png" class="img_slide" style="width: 100%;">
+      <div class="texto_slide">Two Slide</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="numero_slide">3/4</div>
+      <img src="banner3.png" class="img_slide" style="width: 100%;">
+      <div class="texto_slide">Three Slide</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="numero_slide">4/4</div>
+      <img src="banner4.png" class="img_slide" style="width: 100%;">
+      <div class="texto_slide">Four Slide</div>
+    </div>
+
+    <a class="btn_anterior" onclick="mudar_slide(-1)">&lsaquo;</a>
+    <a class="btn_proximo" onclick="mudar_slide(1)">&rsaquo;</a>
+    
+  </section>
+
+  <section style="text-align: center;">
+    <span class="indicador" onclick="slide_atual(1)"></span>
+    <span class="indicador" onclick="slide_atual(2)"></span>
+    <span class="indicador" onclick="slide_atual(3)"></span>
+    <span class="indicador" onclick="slide_atual(4)"></span>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
