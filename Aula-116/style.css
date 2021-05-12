@@ -1,0 +1,25 @@
+.gallery {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.active {
+  border: none;
+  background-color: #f00;
+  color: #fff;
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.img {
+  max-width: 30%;
+  padding: 10px;
+}

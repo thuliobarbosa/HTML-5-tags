@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column_card {
+  float: left;
+  width: 25%;
+  margin-bottom: 15px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text_card {
+  padding: 0 16px;
+}
+
+.text_card::after, .row_card::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title_card {
+  color: #444;
+}
+
+.button_card {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_card:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 800px) {
+  .column_card {
+    width: 100%;
+    display: block;
+  }
+}
